@@ -1,8 +1,8 @@
-namespace Arm{
+namespace Arm {
     export function Count_Curl(x: number, y: number, z: number) { //彎舉 id=1
         basic.pause(100)
         if (y >= 500) {
-            times = times +1
+            times = times + 1
         }
     }
 
@@ -12,11 +12,11 @@ namespace Arm{
             serial.writeValue("Test", 100)
             SPflag = 1;
         }
-        else if(SPflag==1){
-            if(y <= -750){
+        else if (SPflag == 1) {
+            if (y <= -750) {
                 SPflag = 2;
                 times = times + 1
-            }  
+            }
         }
         basic.pause(100)
     }
